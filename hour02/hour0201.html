@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+  	</script>
+  	<script>
+  	  function loadedFunction() {
+  	  	console.log("Page is loaded");
+  	  }
+
+  	  function clickIt() {
+  	  	console.log("User clicked");
+  	  }
+  	</script>
+  	<style>
+      span {
+        background-color: #0066AA;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-color: #C0C0C0;
+        border:2px solid;
+        border-radius: 5px;
+        padding: 3px;
+        position:absolute;
+        top: 150px;
+        left: 100px;
+      }
+    </style>
+  </head>
+  <body onload="loadedFunction()">
+  	<span onclick="clickIt()">Click Me</span>
+   
+  </body>
+</html>

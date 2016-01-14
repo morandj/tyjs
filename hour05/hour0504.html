@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 5-4</title>
+    <meta charset="utf-8" />
+    <script>
+      var moonData = {"Earth":["Luna"],
+                       "Jupiter":["Io", "Europa"],
+                       "Saturn":["Titan", "Rhea"],
+                       "Mars":["Phobos"]};
+      function writeIt(){
+        for (planet in moonData){
+          var moons = moonData[planet];
+          for (moonIdx in moons){
+            var moon = moons[moonIdx];
+            var listItem = makeListItem(planet, moon);
+            document.write(listItem);
+          }
+        }
+      }
+      function makeListItem(name, value){
+        var itemStr = "<li>" + name + ":&nbsp;" + value + "</li>";
+        return itemStr;
+      }
+    </script>
+  </head>
+  <body onload="writeIt()">
+  </body>
+</html>
